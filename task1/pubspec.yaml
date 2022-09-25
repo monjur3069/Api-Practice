@@ -41,6 +41,7 @@ dependencies:
   intl:
   image_picker:
   geolocator:
+  flutter_html:
 
 dev_dependencies:
   flutter_test:
@@ -88,6 +89,10 @@ flutter:
     - family: Tiro Bangla Italic
       fonts:
         - asset: fonts/TiroBangla-Italic.ttf
+
+    - family: NotoSansBengali-VariableFont_wdth,wght
+      fonts:
+        - asset: fonts/NotoSansBengali-VariableFont_wdth,wght.ttf
 
 
   #   - family: Trajan Pro

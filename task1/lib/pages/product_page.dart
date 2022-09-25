@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:provider/provider.dart';
 import '../providers/product_provider.dart';
 
@@ -46,13 +47,15 @@ class _ProductPageState extends State<ProductPage> {
                               provider.searchModel!.data!.products!
                                   .results![index].image!.toString()),
                         ),
-                        title: Text(provider.searchModel!.data!.products!
-                            .results![index].productName!,style: TextStyle(fontFamily: 'Tiro-Bangla-Regular'),),
+                        title: Text('${provider.searchModel!.data!.products!.results![index].productName!}',style: TextStyle(fontFamily: 'Tiro Bangla Italic'),),
                         subtitle: Text(provider.searchModel!.data!.products!
                             .results![index].brand!.slug!.toString()),
                         trailing: Text(provider.searchModel!.data!.products!
                             .results![index].id!.toString()),
                       ),
+                      Html(
+                        data: provider.searchModel!.data!.products!.results![index].description!,
+                      )
                     ],
                   ),
                 ),
