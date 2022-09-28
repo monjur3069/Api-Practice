@@ -43,6 +43,7 @@ dependencies:
   geolocator:
   flutter_html:
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

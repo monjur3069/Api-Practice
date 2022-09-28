@@ -55,7 +55,8 @@ class _ProductPageState extends State<ProductPage> {
                       ),
                       Html(
                         data: provider.searchModel!.data!.products!.results![index].description!,
-                      )
+                      ),
+
                     ],
                   ),
                 ),
